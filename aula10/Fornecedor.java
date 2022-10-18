@@ -36,4 +36,8 @@ public class Fornecedor extends Pessoa {
                 + valorCredito;
     }
 
+    public double obterSaldo() {
+        return valorCredito - valorDivida;
+    }
+
 }
