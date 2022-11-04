@@ -38,7 +38,7 @@ public class FormaGeometricaTeste {
             }
         }
         for (FormaGeometrica forma : formas) {
-            System.out.println(forma + "tem area de " + forma.area() + " e perimetro de  " + forma.perimetro());
+            System.out.println(forma + " tem area de " + forma.area() + " e perimetro de " + forma.perimetro());
         }
 
     }
