@@ -1,0 +1,3 @@
+CREATE TABLE CONTATOS(ID INT PRIMARY KEY AUTO_INCREMENT, NOME VARCHAR(100), TELEFONE VARCHAR(20), ENDERECO VARCHAR(200), EMAIL VARCHAR(100));
+
+insert into contatos(nome, telefone, endereco, email) values ('Antonio', '86999159990', 'Rua A', 'antssousa@gmail.com')
