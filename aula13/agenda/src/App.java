@@ -62,7 +62,6 @@ public class App {
                     email = scan.nextLine();
                     c = new Contato(nome, telefone, endereco, email);
                     dao.insert(c);
-
                     break;
                 case 2:
                     System.out.println("Pesquisar por ID");
@@ -93,6 +92,7 @@ public class App {
                     id = scan.nextLong();
                     c = dao.select(id);
                     if (c != null) {
+                        scan.nextLine();
                         System.out.println("Digite o novo nome do contato");
                         nome = scan.nextLine();
                         System.out.println("Digite o novo telefone do contato");

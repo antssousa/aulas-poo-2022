@@ -77,3 +77,18 @@ insert into contatos(nome, telefone, endereco, email) values ("Antonio", "869991
 	at org.h2.server.web.WebThread.process(WebThread.java:188)
 	at org.h2.server.web.WebThread.run(WebThread.java:101)
 	at java.lang.Thread.run(Unknown Source)
+2023-01-03 14:07:29 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLDataException: Parameter "#5" is not set; SQL statement:
+update contatos set nome = ?, telefone = ?, endereco = ?, email = ? where id = ? [90012-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:646)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:75)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:207)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:159)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at ContatoDAO.update(ContatoDAO.java:105)
+	at App.main(App.java:105)

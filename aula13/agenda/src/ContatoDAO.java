@@ -101,7 +101,7 @@ public class ContatoDAO implements GenericDAO<Contato> {
 			ps.setString(2, e.getTelefone());
 			ps.setString(3, e.getEndereco());
 			ps.setString(4, e.getEmail());
-			ps.setLong(3, e.getId());
+			ps.setLong(5, e.getId());
 			ps.executeUpdate();
 		} catch (SQLException e1) {
 			e1.printStackTrace();
